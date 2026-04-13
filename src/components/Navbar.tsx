@@ -27,7 +27,7 @@ const Navbar = () => {
     }
 
     return () => subscription.unsubscribe();
-  }, [user]);
+  }, []);
 
   const navLinks = [
     { name: "Analyze", href: "/analyze" },

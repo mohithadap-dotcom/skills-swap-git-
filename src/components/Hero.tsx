@@ -108,7 +108,7 @@ const Hero = () => {
             </div>
 
             <div className="max-w-md">
-              <div className="text-[10px] font-mono text-muted uppercase tracking-[0.3em] mb-3">Or explore a peer's skills:</div>
+              <div className="text-[10px] font-mono text-muted uppercase tracking-[0.3em] mb-3">Or explore a peer&apos;s skills:</div>
               <div className="relative group">
                  <input 
                   type="text" 

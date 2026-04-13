@@ -202,7 +202,7 @@ export default function AnalyzePage() {
         <div className={`lg:col-span-5 ${result ? 'hidden lg:block' : ''}`}>
           <div className="mb-10">
             <span className="font-mono text-xs tracking-widest text-primary uppercase">[ GITHUB ANALYZER ]</span>
-            <h2 className="text-4xl font-bold uppercase mt-2 tracking-tighter">What's your <br /> Skill-Value?</h2>
+            <h2 className="text-4xl font-bold uppercase mt-2 tracking-tighter">What&apos;s your <br /> Skill-Value?</h2>
           </div>
 
           <div className="relative group mb-6">
@@ -302,7 +302,7 @@ export default function AnalyzePage() {
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <div className="lg:col-span-1 bg-primary/5 border-l-2 border-primary p-8 h-full">
                       <h4 className="font-mono text-[10px] tracking-[0.4em] text-primary uppercase mb-4">AI ASSESSMENT</h4>
-                      <p className="text-lg leading-relaxed text-foreground/90 font-medium italic">"{result.analysis.summary}"</p>
+                      <p className="text-lg leading-relaxed text-foreground/90 font-medium italic">&quot;{result.analysis.summary}&quot;</p>
                     </div>
                     
                     <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">

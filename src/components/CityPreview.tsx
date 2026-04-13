@@ -81,7 +81,7 @@ const CityPreview = () => {
             </h2>
           </div>
           <p className="text-muted max-w-sm mb-2 font-mono text-xs uppercase tracking-tight">
-            The pulse of Nagpur's future tech leaders. Powered by OpenStreetMap.
+            The pulse of Nagpur&apos;s future tech leaders. Powered by OpenStreetMap.
           </p>
         </div>
 

@@ -41,7 +41,7 @@ export default function MapPage() {
             </div>
             
             <p className="text-xs text-muted leading-relaxed uppercase tracking-tighter">
-               Visualize the concentration of technical skills across Nagpur's premier institutions.
+               Visualize the concentration of technical skills across Nagpur&apos;s premier institutions.
             </p>
 
             <select 
