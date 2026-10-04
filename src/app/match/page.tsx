@@ -4,11 +4,11 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { User, ArrowRightLeft, MapPin, Zap, Star } from "lucide-react";
 import Link from "next/link";
-import { nanoid } from "nanoid";
 
 const demoUsers = [
   {
     id: "1",
+    roomId: "arjun-flutter-webdev",
     name: "Arjun Sharma",
     college: "VNIT",
     avatar: "https://i.pravatar.cc/150?u=arjun",
@@ -19,6 +19,7 @@ const demoUsers = [
   },
   {
     id: "2",
+    roomId: "priya-design-ml",
     name: "Priya Mehta",
     college: "RCOEM",
     avatar: "https://i.pravatar.cc/150?u=priya",
@@ -29,6 +30,7 @@ const demoUsers = [
   },
   {
     id: "3",
+    roomId: "rohan-ml-vibe-coding",
     name: "Rohan Desai",
     college: "PCE Nagpur",
     avatar: "https://i.pravatar.cc/150?u=rohan",
@@ -40,8 +42,6 @@ const demoUsers = [
 ];
 
 const MatchCard = ({ user, index }: any) => {
-  const roomId = nanoid(10);
-
   return (
     <motion.div
       initial={{ opacity: 0, x: -20 }}
@@ -97,7 +97,7 @@ const MatchCard = ({ user, index }: any) => {
         {/* Right: Action */}
         <div className="w-full lg:w-fit">
           <Link
-            href={`/session/${roomId}`}
+            href={`/session/${user.roomId}`}
             className="w-full lg:w-[200px] flex items-center justify-center gap-3 px-8 py-5 bg-white text-black font-bold uppercase text-xs tracking-[0.2em] hover:bg-accent transition-all group-hover:translate-x-1"
           >
             REQUEST SESSION

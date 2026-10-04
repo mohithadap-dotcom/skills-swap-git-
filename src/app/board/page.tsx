@@ -9,6 +9,7 @@ import { nanoid } from "nanoid";
 const demoRequests = [
   {
     id: "r1",
+    roomId: "sameer-ml-webdev",
     user: { name: "Sameer K.", avatar: "https://i.pravatar.cc/150?u=sameer", college: "VNIT" },
     need: "Machine Learning",
     offer: "Web Development",
@@ -16,6 +17,7 @@ const demoRequests = [
   },
   {
     id: "r2",
+    roomId: "anjali-design-flutter",
     user: { name: "Anjali D.", avatar: "https://i.pravatar.cc/150?u=anjali", college: "YCCE" },
     need: "UI Design",
     offer: "Flutter",
@@ -23,6 +25,7 @@ const demoRequests = [
   },
   {
     id: "r3",
+    roomId: "tushar-dsa-vibe-coding",
     user: { name: "Tushar B.", avatar: "https://i.pravatar.cc/150?u=tushar", college: "RCOEM" },
     need: "DSA",
     offer: "Vibe Coding",
@@ -42,6 +45,7 @@ export default function BoardPage() {
     if (!need || !offer) return;
     const newReq = {
       id: nanoid(),
+      roomId: nanoid(8),
       user: { name: "Me", avatar: "https://i.pravatar.cc/150?u=me", college: "VNIT" },
       need,
       offer,
@@ -151,7 +155,7 @@ export default function BoardPage() {
 
              <div className="w-full md:w-fit">
                 <Link 
-                  href={`/session/${nanoid(8)}`}
+                  href={`/session/${req.roomId}`}
                   className="w-full md:w-[180px] flex items-center justify-center gap-3 px-8 py-4 bg-white/5 border border-white/10 text-white font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-black transition-all"
                 >
                   <MessageCircle className="w-4 h-4" />
